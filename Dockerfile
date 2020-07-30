@@ -1,9 +1,8 @@
 FROM centos/mysql-80-centos7
       
 
-RUN mkdir /mysqldb && \
-    chmod 777 /mysqldb && \
-    mkdir /root/app
+USER root
+RUN mkdir /root/app
 WORKDIR /root/app
 
 
