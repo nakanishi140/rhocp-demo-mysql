@@ -21,7 +21,7 @@ RUN sed -i "s/^datadir=.*$/datadir=\/mysqldb/" /etc/my.cnf &&\
 
 
 RUN mysqld --initialize --user=mysql && \
-    chmod 777 /mysqllog/mysqld.log
+    chmod 777 /mysqltmp/mysqld.log
 
 USER 1001
 EXPOSE 3306
