@@ -1,6 +1,11 @@
 FROM centos/mysql-80-centos7
-      
-RUN sed -i "s/^datadir =.*$/datadir = \/mysqldb/" /etc/my.cnf.d/base.cnf  
+
+
+ENV MYSQL_ROOT_PASSWORD=mysql \
+    MYSQL_DATABASE=demoÅ@\
+    MYSQL_PASSWORD=mysqlÅ@\
+    MYSQL_USER=demo
+
 
 RUN yum clean all -y && \
   yum install -y git && \
