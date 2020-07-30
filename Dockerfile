@@ -14,7 +14,7 @@ RUN mkdir /mysqldb && \
 WORKDIR /root/app
 
 RUN sed -i "s/^datadir=.*$/datadir=\/mysqldb/" /etc/my.cnf &&\
-    sed -i "s/^log-error=.*$/log-error=\/mysqllog\/mysqld.log" /etc/my.cnf
+    sed -i "s/^log-error=.*$/log-error=\/mysqllog\/mysqld.log/" /etc/my.cnf
 
 
 USER 1001
