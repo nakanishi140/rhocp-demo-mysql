@@ -11,5 +11,7 @@ WORKDIR /root/app
 
 USER 1001
 EXPOSE 3306
-ENTRYPOINT ["mysqld_safe"]
+ENTRYPOINT ["/bin/sh", "-c", "while :; do sleep 10; done"]
+
+
 
