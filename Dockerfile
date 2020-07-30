@@ -1,29 +1,16 @@
-FROM centos:7
+FROM centos/mysql-80-centos7
       
-RUN rpm -ivh http://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm && \
-  yum clean all -y && \
-  yum install -y git && \
-  yum install -y mysql-community-server && \
-  yum clean all -y
 
 RUN mkdir /mysqldb && \
-    mkdir /mysqltmp && \
     chmod 777 /mysqldb && \
-    chmod 777 /mysqltmp &&\
     mkdir /root/app
 WORKDIR /root/app
 
-RUN sed -i "s/^datadir=.*$/datadir=\/mysqldb/" /etc/my.cnf &&\
-    sed -i "s/^log-error=.*$/log-error=\/mysqltmp\/mysqld.log/" /etc/my.cnf && \
-    sed -i "s/^socket=.*$/socket=\/mysqltmp\/mysqld.sock/" /etc/my.cnf && \
-    sed -i "s/^pid-file=.*$/pid-file=\/mysqltmp\/mysqld.pid/" /etc/my.cnf && \
-    echo "user=mysql" >> /etc/my.cnf
 
+RUN sed -i "s/^datadir=.*$/datadir=\/mysqldb/" /etc/my.cnf.d/base.cnf
 
-RUN mysqld --initialize --user=mysql && \
-    chmod 777 /mysqltmp/mysqld.log
 
 USER 1001
 EXPOSE 3306
-ENTRYPOINT ["/bin/sh", "-c", "while :; do sleep 10; done"]
+ENTRYPOINT ["run-mysqld"]
 
