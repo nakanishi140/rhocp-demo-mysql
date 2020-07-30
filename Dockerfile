@@ -2,8 +2,8 @@ FROM centos/mysql-80-centos7
 
 
 ENV MYSQL_ROOT_PASSWORD=mysql \
-    MYSQL_DATABASE=demoÅ@\
-    MYSQL_PASSWORD=mysqlÅ@\
+    MYSQL_DATABASE=demo \
+    MYSQL_PASSWORD=mysql \
     MYSQL_USER=demo
 
 USER root
