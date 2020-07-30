@@ -17,7 +17,7 @@ RUN sed -i "s/^datadir=.*$/datadir=\/mysqldb/" /etc/my.cnf &&\
     sed -i "s/^log-error=.*$/log-error=\/mysqltmp\/mysqld.log/" /etc/my.cnf && \
     sed -i "s/^socket=.*$/socket=\/mysqltmp\/mysqld.sock/" /etc/my.cnf && \
     sed -i "s/^pid-file=.*$/pid-file=\/mysqltmp\/mysqld.pid/" /etc/my.cnf && \
-    cat "user=mysql" >> /etc/my.cnf
+    echo "user=mysql" >> /etc/my.cnf
 
 
 RUN mysqld --initialize --user=mysql && \
