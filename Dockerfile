@@ -6,7 +6,7 @@ ENV MYSQL_ROOT_PASSWORD=mysql \
     MYSQL_PASSWORD=mysqlÅ@\
     MYSQL_USER=demo
 
-
+USER root
 RUN yum clean all -y && \
   yum install -y git && \
 RUN mkdir /root/app
