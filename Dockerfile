@@ -20,7 +20,8 @@ RUN sed -i "s/^datadir=.*$/datadir=\/mysqldb/" /etc/my.cnf &&\
     sed -i "s/^socket=.*$/socket=\/mysqltmp\/mysqld.sock/" /etc/my.cnf && \
     sed -i "s/^pid-file=.*$/pid-file=\/mysqltmp\/mysqld.pid/" /etc/my.cnf
 
-RUN mysql_upgrade
+
+mysql_install_db --datadir=/mysqldb --user=mysql
 
 USER 1001
 EXPOSE 3306
