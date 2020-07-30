@@ -9,7 +9,7 @@ RUN rpm -ivh http://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm
 RUN mkdir /mysqldb && \
     mkdir /mysqllog && \
     chmod 777 /mysqldb && \
-    chmod 777 /mysqlog &&\
+    chmod 777 /mysqllog &&\
     mkdir /root/app
 WORKDIR /root/app
 
