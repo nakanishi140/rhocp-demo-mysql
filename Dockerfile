@@ -7,6 +7,7 @@ RUN rpm -ivh http://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm
   yum clean all -y
 
 RUN mkdir /mysqldb && \
+    chmod 777 /mysqldb && \
     mkdir /root/app
 WORKDIR /root/app
 
