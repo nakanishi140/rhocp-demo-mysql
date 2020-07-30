@@ -8,15 +8,16 @@ ENV MYSQL_ROOT_PASSWORD=mysql \
 
 USER root
 RUN yum clean all -y && \
-  yum install -y git && \
+  yum install -y git
+
+USER 1001
 RUN mkdir /root/app
 WORKDIR /root/app
-
 RUN git clone https://github.com/yuu-ymt/rhocp-demo-mysql.git
 mv rhocp-demo-mysql/* .
 
 
-USER 1001
+
 EXPOSE 3306
 ENTRYPOINT ["run-mysqld"]
 
