@@ -8,7 +8,7 @@ ENV MYSQL_ROOT_PASSWORD=mysql \
 
 USER root
 RUN yum clean all -y && \
-  yum install -y git
+    yum install -y git
 
 RUN mkdir /root/app
 WORKDIR /root/app
@@ -22,5 +22,5 @@ RUN mv rhocp-demo-mysql/* . && \
 USER 1001
 
 EXPOSE 3306
-ENTRYPOINT ["/bin/sh", "-c", "while :; do sleep 10; done"]
+ENTRYPOINT ["./run.sh"]
 
