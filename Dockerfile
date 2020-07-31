@@ -22,5 +22,5 @@ RUN mv rhocp-demo-mysql/* . && \
 USER 1001
 
 EXPOSE 3306
-ENTRYPOINT ["./run.sh"]
+ENTRYPOINT ["/root/app/run.sh"]
 
