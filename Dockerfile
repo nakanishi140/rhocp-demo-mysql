@@ -22,5 +22,5 @@ RUN chgrp -R 0 /root/app && \
 USER 1001
 
 EXPOSE 3306
-ENTRYPOINT ["run.sh"]
+ENTRYPOINT ["./run.sh"]
 
