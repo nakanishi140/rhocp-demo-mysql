@@ -13,8 +13,11 @@ RUN yum clean all -y && \
 RUN mkdir /root/app
 WORKDIR /root/app
 RUN git clone https://github.com/yuu-ymt/rhocp-demo-mysql.git
-RUN mv rhocp-demo-mysql/* . && \
-    chmod 777 *
+RUN mv rhocp-demo-mysql/* .
+
+RUN chgrp -R 0 /root/app && \
+    chmod -R g+rwX /root/app
+
 
 USER 1001
 
