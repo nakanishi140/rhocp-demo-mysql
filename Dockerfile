@@ -13,8 +13,7 @@ RUN yum clean all -y && \
 RUN mkdir /root/app
 WORKDIR /root/app
 RUN git clone https://github.com/yuu-ymt/rhocp-demo-mysql.git
-RUN mv rhocp-demo-mysql/* . && \
-    chmod +x create_table.sh
+RUN mv rhocp-demo-mysql/* .
 
 RUN chgrp -R 0 /root/app && \
     chmod -R g+rwX /root/app
@@ -23,5 +22,5 @@ RUN chgrp -R 0 /root/app && \
 USER 1001
 
 EXPOSE 3306
-ENTRYPOINT ["run-mysqld"]
+ENTRYPOINT ["run.sh"]
 
