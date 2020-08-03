@@ -1,12 +1,10 @@
-FROM centos/mysql-56-centos7
-
-
-ENV MYSQL_ROOT_PASSWORD=mysql \
-    MYSQL_DATABASE=demo \
-    MYSQL_PASSWORD=mysql \
-    MYSQL_USER=demo
+FROM centos/mysql-80-centos7
 
 USER root
+ENV MYSQL_USER=demo
+    MYSQL_DATABASE=demo \
+    MYSQL_PASSWORD=mysql
+
 RUN yum clean all -y && \
     yum install -y git
 
