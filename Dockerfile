@@ -1,4 +1,4 @@
-FROM centos/mysql-80-centos7
+FROM centos/mysql-56-centos7
 
 
 ENV MYSQL_ROOT_PASSWORD=mysql \
