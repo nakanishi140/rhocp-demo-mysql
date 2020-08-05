@@ -2,10 +2,11 @@
 
 run-mysqld &
 
-sleep 10
+sleep 20
 
-if [ ! -d /var/lib/mysql/data/mysql ]; then
- ./initialize.sh
+mysql -u demo -pmysql -h localhost demo -e 'show tables like "demo";' | grep demo
+if [ $? -ne 0 ]; then
+  ./initialize.sh
 fi
 
 tail -f /dev/null
