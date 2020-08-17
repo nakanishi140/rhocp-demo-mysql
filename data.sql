@@ -5,27 +5,27 @@ create table demo (
  sub_headline varchar(1024),
  category1  varchar(255),
  category2  varchar(255),
- category3  varchar(1024),
+ category3  varchar(1024)
 );
 
 
 
-insert into demo value (11,'beautiful-2576840_1920.jpg','ƒAƒEƒgƒhƒA‚ğ‚à‚Á‚ÆèŒyE‰õ“K‚É','‹CŒy‚ÉƒGƒŒƒKƒ“ƒg@‹CŒy‚Éô‚¦‚é','summer','title','‰Ä•¨');
-insert into demo value (12,'casual-1836613_1920.jpg','ƒJƒWƒ…ƒAƒ‹ƒXƒ^ƒCƒ‹‚ÅƒOƒ‰ƒ“ƒsƒ“ƒO','‰Ä‚Ìv‚¢o‚ğUG‚Æ‹¤‚É','summer','title','‰Ä•¨');
-insert into demo value (13,'fashion-2766734_1920.jpg','‚»‚Ì‚Ü‚ÜŠX‚Ö‚Å‚©‚¯‚æ‚¤','‰Ä‚ÌƒXƒ^ƒCƒ‹‚Ív‚¢‚Ì‚Ü‚Ü‚É','summer','title','‰Ä•¨');
+insert into demo value (11,'beautiful-2576840_1920.jpg','ã‚¢ã‚¦ãƒˆãƒ‰ã‚¢ã‚’ã‚‚ã£ã¨æ‰‹è»½ãƒ»å¿«é©ã«','æ°—è»½ã«ã‚¨ãƒ¬ã‚¬ãƒ³ãƒˆã€€æ°—è»½ã«æ´—ãˆã‚‹','summer','title','å¤ç‰©');
+insert into demo value (12,'casual-1836613_1920.jpg','ã‚«ã‚¸ãƒ¥ã‚¢ãƒ«ã‚¹ã‚¿ã‚¤ãƒ«ã§ã‚°ãƒ©ãƒ³ãƒ”ãƒ³ã‚°','å¤ã®æ€ã„å‡ºã‚’UGã¨å…±ã«','summer','title','å¤ç‰©');
+insert into demo value (13,'fashion-2766734_1920.jpg','ãã®ã¾ã¾è¡—ã¸ã§ã‹ã‘ã‚ˆã†','å¤ã®ã‚¹ã‚¿ã‚¤ãƒ«ã¯æ€ã„ã®ã¾ã¾ã«','summer','title','å¤ç‰©');
 
-insert into demo value (21,'blue-2564660_1920.jpg','ƒAƒEƒgƒhƒAƒXƒ^ƒCƒ‹','“úí‚Å‚à‰õ“K‚É’…‚ç‚ê‚éƒAƒEƒgƒhƒAƒXƒ^ƒCƒ‹ƒtƒ@ƒbƒVƒ‡ƒ“','summer','contents','‰Ä•¨');
-insert into demo value (22,'people-2563491_1920.jpg','UGƒXƒ^ƒCƒ‹','UG‚Å©•ª‚ç‚µ‚­©—R‚ÈƒXƒ^ƒCƒ‹‚ğ','summer','contents','‰Ä•¨');
-insert into demo value (23,'hip-hop-1209499_1920.jpg','ŠXŠpƒXƒ^ƒCƒ‹','ŠX‚Ö‚Å‚©‚¯‚æ‚¤Aƒtƒ@ƒbƒVƒ‡ƒ“‚ğŠy‚µ‚à‚¤','summer','contents','‰Ä•¨');
-insert into demo value (24,'sunset-1282282_1920.jpg','‰Ä‚Ì“Á•ÊƒRƒŒƒNƒVƒ‡ƒ“','‚æ‚è‰õ“K‚ÉA‚æ‚èS’n‚æ‚¢ƒ‰ƒCƒtƒXƒ^ƒCƒ‹‚ğ','summer','contents','‰Ä•¨');
-
-
-
-insert into demo value (31,'cold-1284029_1920.jpg','“~‚Ì‹ó‚Å‚à‰õ“K‚É','‹CŒy‚Èƒ_ƒEƒ“AUGƒXƒ^ƒCƒ‹','winter','title','“~•¨');
-insert into demo value (32,'cold-1284028_1920.jpg','q‹Ÿ‚½‚¿‚Ì“~‹x‚İ‚ÍH','áR‚Å‚à’g‚©‚­AUGƒXƒ^ƒCƒ‹','winter','title','“~•¨');
+insert into demo value (21,'blue-2564660_1920.jpg','ã‚¢ã‚¦ãƒˆãƒ‰ã‚¢ã‚¹ã‚¿ã‚¤ãƒ«','æ—¥å¸¸ã§ã‚‚å¿«é©ã«ç€ã‚‰ã‚Œã‚‹ã‚¢ã‚¦ãƒˆãƒ‰ã‚¢ã‚¹ã‚¿ã‚¤ãƒ«ãƒ•ã‚¡ãƒƒã‚·ãƒ§ãƒ³','summer','contents','å¤ç‰©');
+insert into demo value (22,'people-2563491_1920.jpg','UGã‚¹ã‚¿ã‚¤ãƒ«','UGã§è‡ªåˆ†ã‚‰ã—ãè‡ªç”±ãªã‚¹ã‚¿ã‚¤ãƒ«ã‚’','summer','contents','å¤ç‰©');
+insert into demo value (23,'hip-hop-1209499_1920.jpg','è¡—è§’ã‚¹ã‚¿ã‚¤ãƒ«','è¡—ã¸ã§ã‹ã‘ã‚ˆã†ã€ãƒ•ã‚¡ãƒƒã‚·ãƒ§ãƒ³ã‚’æ¥½ã—ã‚‚ã†','summer','contents','å¤ç‰©');
+insert into demo value (24,'sunset-1282282_1920.jpg','å¤ã®ç‰¹åˆ¥ã‚³ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³','ã‚ˆã‚Šå¿«é©ã«ã€ã‚ˆã‚Šå¿ƒåœ°ã‚ˆã„ãƒ©ã‚¤ãƒ•ã‚¹ã‚¿ã‚¤ãƒ«ã‚’','summer','contents','å¤ç‰©');
 
 
-insert into demo value (41,'fog-3914967_1920.jpg','“~‚Ì’©','ŒµŠ¦‚Ì’†‚Å‚à‰õ“K‚Å’g‚©‚¢ƒXƒ^ƒCƒ‹ƒtƒ@ƒbƒVƒ‡ƒ“','winter','title','“~•¨');
-insert into demo value (42,'fashion-1063100_1920.jpg','UGƒXƒ^ƒCƒ‹','UG‚Å©•ª‚ç‚µ‚­©—R‚ÈƒXƒ^ƒCƒ‹‚ğ','winter','title','“~•¨');
-insert into demo value (43,'covering-face-1149200_1920.jpg','áRƒXƒ^ƒCƒ‹','áR‚Ö‚Å‚©‚¯‚æ‚¤Aƒtƒ@ƒbƒVƒ‡ƒ“‚ğŠy‚µ‚à‚¤','winter','title','“~•¨');
+
+insert into demo value (31,'cold-1284029_1920.jpg','å†¬ã®ç©ºã§ã‚‚å¿«é©ã«','æ°—è»½ãªãƒ€ã‚¦ãƒ³ã€UGã‚¹ã‚¿ã‚¤ãƒ«','winter','title','å†¬ç‰©');
+insert into demo value (32,'cold-1284028_1920.jpg','å­ä¾›ãŸã¡ã®å†¬ä¼‘ã¿ã¯ï¼Ÿ','é›ªå±±ã§ã‚‚æš–ã‹ãã€UGã‚¹ã‚¿ã‚¤ãƒ«','winter','title','å†¬ç‰©');
+
+
+insert into demo value (41,'fog-3914967_1920.jpg','å†¬ã®æœ','å³å¯’ã®ä¸­ã§ã‚‚å¿«é©ã§æš–ã‹ã„ã‚¹ã‚¿ã‚¤ãƒ«ãƒ•ã‚¡ãƒƒã‚·ãƒ§ãƒ³','winter','title','å†¬ç‰©');
+insert into demo value (42,'fashion-1063100_1920.jpg','UGã‚¹ã‚¿ã‚¤ãƒ«','UGã§è‡ªåˆ†ã‚‰ã—ãè‡ªç”±ãªã‚¹ã‚¿ã‚¤ãƒ«ã‚’','winter','title','å†¬ç‰©');
+insert into demo value (43,'covering-face-1149200_1920.jpg','é›ªå±±ã‚¹ã‚¿ã‚¤ãƒ«','é›ªå±±ã¸ã§ã‹ã‘ã‚ˆã†ã€ãƒ•ã‚¡ãƒƒã‚·ãƒ§ãƒ³ã‚’æ¥½ã—ã‚‚ã†','winter','title','å†¬ç‰©');
 
