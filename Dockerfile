@@ -17,6 +17,8 @@ RUN mv rhocp-demo-mysql/* . && \
     chgrp -R 0 /root/app && \
     chmod -R g+rwX /root/app
 
+RUN sed -i "1i [client]\ndefault-character-set = utf8" /etc/my.cnf && \
+    sed -i "3i character-set-server = utf8" /etc/my.cnf
 
 USER 1001
 
