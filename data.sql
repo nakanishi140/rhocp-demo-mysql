@@ -31,9 +31,9 @@ insert into demo value (43,'covering-face-1149200_1920.jpg','雪山スタイル'
 
 
 
-insert into demo value (51,'model-2911330_1920.jpg','カジュアルスタイル','ビジネスシーンではオシャレと清潔感を両立させること','winter','contents','男物');
-insert into demo value (52,'fashion-1979136_1920.jpg','フォーマルスタイル','ビジネス空間の演出には上質なスーツが必要。必要なスーツが必ず見つかる','winter','contents','男物');
-insert into demo value (53,'rollers-4128215_1920.jpg','ファッションアイテム','ネクタイは自分のセンスをアピールできる数少ないファッションアイテム。十分に楽しもう','winter','contents','男物');
-insert into demo value (54,'cravat-987584_1920.jpg','コレクションアイテム','コーディネート済みのコレクションをチョイスするだけ。','winter','contents','男物');
-insert into demo value (55,'store-984393_1920.jpg','全てのアイテムをあなたに','UG Mensはビジネス・ファッションに必要な全てを届けます。','winter','contents','男物');
+insert into demo value (51,'model-2911330_1920.jpg','カジュアルスタイル','ビジネスシーンではオシャレと清潔感を両立させること','mens','contents','男物');
+insert into demo value (52,'fashion-1979136_1920.jpg','フォーマルスタイル','ビジネス空間の演出には上質なスーツが必要。必要なスーツが必ず見つかる','mens','contents','男物');
+insert into demo value (53,'rollers-4128215_1920.jpg','ファッションアイテム','ネクタイは自分のセンスをアピールできる数少ないファッションアイテム。十分に楽しもう','mens','contents','男物');
+insert into demo value (54,'cravat-987584_1920.jpg','コレクションアイテム','コーディネート済みのコレクションをチョイスするだけ。','mens','contents','男物');
+insert into demo value (55,'store-984393_1920.jpg','全てのアイテムをあなたに','UG Mensはビジネス・ファッションに必要な全てを届けます。','mens','contents','男物');
 
